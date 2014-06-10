@@ -8,6 +8,7 @@
 		<link rel='stylesheet' type='text/css' href='./style/style.css' media='all' />
 		<script src='./javascript/jquery-latest.min.js' type='text/javascript'></script>
 		<script src='./javascript/js.js' type='text/javascript'></script>
+		<script src="./javascript/jquery.validate.js"></script>
 	</head>
 	<!-- BODY -->
 	<body>
@@ -20,7 +21,7 @@
 			<nav>
 				<ul>
 					<li onclick="javascript:location.href='index.html'" data-url='index'>Home</li>
-					<li class='active' data-url='about'>About</li>
+					<li data-url='about'>About</li>
 					<li>Topics
 						<ul>
 							<li data-url='dandc'>Design &amp; Consultancy</li>
@@ -38,25 +39,45 @@
 						</ul>
 					</li>
 					<li data-url='gallery'>Gallery</li>
-					<li data-url='contact'>Contact</li>
+					<li class='active' data-url='contact'>Contact</li>
 				</ul>
 			</nav>
 
 			<!-- main webpage content -->
 			<div class='main_content'>
 				<section>
-					<h1>About Us!</h1>
-
-					<p>We are a Design and Consultancy Business</p>
-
-					<p>Water Equipment Technology is a professional company that offers critical support in harvesting, storing and the efficient application of your water supply.</p>
-
-					<p>Our business strategy is Sustainable Water Management Solutions.</p>
-
-					<p>A Sustainable quality water supply is the life blood of any Agricultural Property, Horticultural Garden or Sporting Arena. This day and age, such irrigators must have their own water supply complete with a water usage management plan to guarantee themselves of an uninterrupted sustainable water supply.</p>
-
-					<img class='bottom_image'
-					 src='./images/about_image.jpg' />
+					<h1>Contact Us!</h1>
+					<p>If there is anything we can help you with please shoot us an email using the form below, note all feilds are required</p>
+					<!-- Form -->
+					<div class='form_div'>
+						<!-- im getting so i can see the form is working, under a normal situation this would be a post, when a backend is present-->
+						<form class="form" id="form1" action='./submit.php' method='get'>
+							<fieldset>
+								<p>
+									<label class='feild_label'>First Name: </label>
+									<input name='firstName' type='text' id='firstName' class='input_text' placeholder='John' />
+								</p>
+								<p>
+									<label class='feild_label'>Last Name: </label>
+									<input name='lastName' type='text' id='lastName' class='input_text' placeholder='Smith' />
+								</p>
+								<p>
+									<label class='feild_label'>Return Address: </label>
+									<input name='userAddress' type='text' id='userAddress' class='input_text' placeholder='j.smith@gmail.com' />
+								</p>
+								<p>
+									<label class='feild_label'>Subject: </label>
+									<input name='subject' type='text' id='subject' class='input_text' placeholder='Quote' />
+								</p>
+								<p>
+									<textarea name='usermessage' id='usermessage' rows='6' cols='60' placeholder='Write your message here. Then click the Submit button.'></textarea>
+								</p>
+								<p class='button_paragraph'>
+									<button type="submit" class='input_submit'>Submit</button>
+								</p>
+							</fieldset>
+						</form>
+					</div>
 				</section>
 			</div>
 			<div class='bottom_frame'>

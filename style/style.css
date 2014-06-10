@@ -1,5 +1,9 @@
+/*
+ Body (everything inherits from here)
+ */
+
 body {
-	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
 	padding: 0px;
 	margin: 0px;
 	font-size: 13px;
@@ -8,27 +12,44 @@ body {
 	background-image: url('../images/background.jpg');
 }
 
+/* 
+ Paragraphs
+ */
 p {
 	font-size: 24px;
 	text-align: left;
 }
 
+p.button_paragraph{
+	text-align: center;
+}
+
+/*
+ Headings
+ */
+h1 {
+	font-size: 2em;
+	text-align: left;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	text-decoration: underline;
+}
+
+/*
+ Images
+ */
+img.bottom_image {
+	width: 100%;
+	height: auto;
+}
+
+/* 
+ Divs
+ */
 div.bottom_frame p {
 	font-size: 12px;
 	padding: 0px;
 	margin: 2px;
-}
-
-h1 {
-	font-size: 2em;
-	text-align: left;
-	font-family: 'Helvetica Neue';
-	text-decoration: underline;
-}
-
-img.bottom_image {
-	width: 100%;
-	height: auto;
+	color: #F9F8F6;
 }
 
 div.container {
@@ -36,32 +57,33 @@ div.container {
 	margin: 0 auto;
 	padding: 0px;
 	max-width: 1000px;
+	min-width: 800px;
 	overflow: hidden;
 }
 
 div.heading {
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: #080235;
+	background-color: #060227;
 	background-size: 50%;
 	text-align: center;
 	width: 100%;
 	height: 120px;
 	margin: 0;
-	border: 1px red;
+}
+
+div.form_div {
+	padding: 10px;
 }
 
 div.bottom_frame {
 	background-color: rgb(167,173,151);
-	background-image: url('../images/green_cup.png');
+	background-image: url('../images/grey_wash_wall.png');
 	font-size: .7em;
 	text-align: left;
 	vertical-align: middle;
 	overflow: hidden;
 	padding: 10px;
-	/*
-	height: 100px;
-	*/
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -73,15 +95,21 @@ div.main_content {
 	padding-bottom: 10px;
 	background-image: url('../images/lightpaperfibers.png');
 	height: 100%;
-	min-height: 300px;
+	min-height: 600px;
 	overflow: auto;
 }
 
+/*
+ HTML5 Nav
+ */
 nav {
 	margin: 0px;
 	padding: 0px;
 }
 
+/*
+ Lists
+ */ 
 ul {
 	text-align: center;
 	display: inline;
@@ -102,7 +130,7 @@ ul li {
 	padding: 0px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background: #4D4D4D;
+	background: #A4A1B2;
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -117,7 +145,7 @@ li.active {
 }
 
 ul li:hover {
-	background: #555;
+	background: #75727F;
 	color: #fff;
 	z-index: 2;
 }
@@ -143,7 +171,7 @@ ul li ul {
 }
 
 ul li ul li { 
-	background: #555; 
+	background: #75727F; 
 	position: relative;
 	padding-left: 20px;
 	text-align: left;
@@ -155,7 +183,7 @@ ul li ul li {
 }
 
 ul li ul li:hover { 
-	background: #666; 
+	background: #5F5D67; 
 }
 
 ul li:hover ul {
@@ -164,6 +192,82 @@ ul li:hover ul {
 	visibility: visible;
 }
 
+/*
+ Forms
+ */
+form.form {
+	padding: 10px;
+}
+
+fieldset{
+	width: 100%;
+	margin: 0 auto;
+	border: none; 
+}
+
+fieldset p{
+	clear: both;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+/*
+ Labels
+ */
+label.feild_label{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: right;
+	width: 40%;
+	float: left;
+	padding: 8px;
+}
+
+/*
+ Inputs
+ */
+input.input_text{
+	width: 50%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 20px;
+	padding: 8px;
+	float: left;
+	text-align: left;
+}
+
+button.input_submit{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 24px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+input.select{
+	width: 30%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	float: left;
+	text-align: left;
+}
+
+textarea{
+	resize: none;
+	width: 100%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
+	font-size: 24px;
+	text-align: left;
+	float: left;
+}
+
+/*
+ JS
+*/
 ul.slidesjs-pagination{
 	display: none;
 }
@@ -179,6 +283,15 @@ a.slidesjs-navigation{
 	position: relative;
     display:none;
     z-index: 1;
+}
+
+label.error { 
+	color: red; 
+	padding-right: 100px;
+	vertical-align: top; 
+	display: block;
+	clear: both;
+	float: right;
 }
 
 

@@ -35,6 +35,45 @@ $(document).ready(function(){
 	});
 
 	/**
+	 * Initilises the jQuery validate pugin (a free open source plugin for form
+	 * managment and validation)
+	 * @return {[NONE]}
+	 */
+	$(function(){
+		// check that the form1 element exists
+		if ($("#form1").length){
+			// some personal debugging
+			console.log("Found #form1 Element")
+			// initlise the validate plugin with the below feilds as required
+			// these settings related to the form1's names for the input
+			// form in contact.html
+			$("#form1").validate({
+				rules: {
+					"firstName": {
+						required: true
+					},  
+					"lastName": {
+						required: true
+					},
+					"userAddress": {
+						required: true,
+						email: true
+					},
+					"subject": {
+						required: true
+					},
+					"usermessage": {
+						required: true
+					}
+				}
+			});
+		// if it does not exist then, print message and move on
+		} else {
+			console.log("No #form1 Element")
+		}
+	});
+
+	/**
 	 * Function that interprets the data-url tag embedded in each li tag
 	 * of the web page, this will be used for navigating the page.
 	 * @return {[NONE]}
