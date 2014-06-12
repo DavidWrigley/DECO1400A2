@@ -1,7 +1,6 @@
 /*
  Body (everything inherits from here)
  */
-
 body {
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;	text-align: center;
 	padding: 0px;
@@ -22,6 +21,7 @@ p {
 
 p.button_paragraph{
 	text-align: center;
+	margin: 6px;
 }
 
 /*
@@ -73,7 +73,8 @@ div.heading {
 }
 
 div.form_div {
-	padding: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 div.bottom_frame {
@@ -111,6 +112,7 @@ nav {
  Lists
  */ 
 ul {
+	color: #F9F8F6;
 	text-align: center;
 	display: inline;
 	margin: 0;
@@ -130,22 +132,25 @@ ul li {
 	padding: 0px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	/*
 	background: #A4A1B2;
+	*/
+	background: rgb(102,102,102);
 	cursor: pointer;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 	z-index: 2;
 }
 
 li.active {
-	background-color: #FF530D;
+	background-color: #175EA1;
 }
 
 ul li:hover {
-	background: #75727F;
+	background: #1E7CD5;
 	color: #fff;
 	z-index: 2;
 }
@@ -162,16 +167,19 @@ ul li ul {
 	display: none;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transiton: opacity 0.2s;
-	-moz-transition: opacity 0.2s;
-	-ms-transition: opacity 0.2s;
-	-o-transition: opacity 0.2s;
-	-transition: opacity 0.2s;
+	-webkit-transiton: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-ms-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	-transition: opacity 0.3s;
 	z-index: 2;
 }
 
 ul li ul li { 
+	/*
 	background: #75727F; 
+	*/
+	background: rgb(102,102,102);
 	position: relative;
 	padding-left: 20px;
 	text-align: left;
@@ -183,7 +191,12 @@ ul li ul li {
 }
 
 ul li ul li:hover { 
+	/*
 	background: #5F5D67; 
+	*/
+	background: #1E7CD5;
+	color: #fff;
+	z-index: 2;
 }
 
 ul li:hover ul {
@@ -196,13 +209,16 @@ ul li:hover ul {
  Forms
  */
 form.form {
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 fieldset{
 	width: 100%;
 	margin: 0 auto;
 	border: none; 
+	margin: 0px;
+	padding: 0px;
 }
 
 fieldset p{

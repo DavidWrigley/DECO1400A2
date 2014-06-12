@@ -1,11 +1,18 @@
 /**
+ * Javascript Code
+ * Written for WET
+ * Created by: David Wrigley
+ */
+
+/**
  * On page load function
  * @return {[NONE]}
  */
 $(document).ready(function(){
 	
 	/**
-	 * Initlise Slidesjs (a free open source javascript image slider)
+	 * Initlise Slidesjs http://www.slidesjs.com (a free open source javascript
+	 * image slider) Created by: Nathan Searles. 
 	 * This function is called for every initlised slide
 	 * @return {[NONE]}
 	 */
@@ -35,8 +42,9 @@ $(document).ready(function(){
 	});
 
 	/**
-	 * Initilises the jQuery validate pugin (a free open source plugin for form
-	 * managment and validation)
+	 * Initilises the jQuery validate pugin http://jqueryvalidation.org (a free 
+	 * open source plugin for form managment and validation) Created by:
+	 * Jquery foundation
 	 * @return {[NONE]}
 	 */
 	$(function(){
@@ -76,12 +84,14 @@ $(document).ready(function(){
 	/**
 	 * Function that interprets the data-url tag embedded in each li tag
 	 * of the web page, this will be used for navigating the page.
+	 * written by David Wrigley
 	 * @return {[NONE]}
 	 */
 	$("li:not(:eq(0))").click(function(){
 		if($(this).data('url') == null) {
-			// do nothing, as this will go to the parent LI's page before then
-			// going to the childs, this looks bad.
+			// do nothing, as the data does not exist. This will also fire when
+			// clicking on a child of a parten LI, this will switch to the
+			// parents URL first, not the childs, Bad!
 		} else {
 			// the element contains a data-url tag
 			// set the varabe
