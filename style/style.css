@@ -9,6 +9,9 @@ body {
 	text-align: center;
 	background: #E3CAA1;
 	background-image: url('../images/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 270%;
 }
 
 /* 
@@ -40,6 +43,7 @@ h1 {
 img.bottom_image {
 	width: 100%;
 	height: auto;
+	max-height: 600px;
 }
 
 /* 
